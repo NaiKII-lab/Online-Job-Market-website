@@ -1,0 +1,125 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 400px;
+    max-width: 100%; /* ป้องกันล้นจอ */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #45a049;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    appearance: none; /* ซ่อน default ของ browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='12' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7L10 12L15 7' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); 
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px 16px;
+}
+
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+option {
+    padding: 10px;
+}
+
+
+    .error{
+      width: 92%;
+      margin: 0px auto;
+      padding: 10px;
+      border: 1px solid #a94442;
+      color: #a94442;
+      background: #f2dede;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .success {
+    color: #3c763d;
+    background: #dff9d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+    }
+
+/* 📱 Responsive สำหรับมือถือ */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    input, textarea, button {
+        font-size: 14px;
+    }
+    button {
+        padding: 10px;
+    }
+}
+
+/* 📱 Tablet (600px – 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+}

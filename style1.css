@@ -1,0 +1,1072 @@
+/* ===== CSS เก่าของคุณ ===== */
+body {
+  background-color: #f8f9fa; /* ขาวนวล */
+  color: #333; /* สีตัวอักษรเทาเข้ม อ่านง่าย */
+  font-family: "Prompt", "Kanit", sans-serif;
+}
+
+header { 
+  background-color: #0056b3; 
+  color: white; 
+  padding: 20px; 
+} 
+
+/* 🌐 HEADER สไตล์มืออาชีพ */
+.site-header {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  color: white;
+  font-family: "Prompt", "Kanit", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header h3 {
+  font-size: 1.3rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.site-header .nav-link {
+  color: #fff !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-header .nav-link:hover {
+  color: #ffe680 !important;
+}
+
+.site-header .btn-light {
+  color: #0056b3;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.site-header .btn-light:hover {
+  background: #fff;
+  color: #004090;
+  transform: translateY(-2px);
+}
+
+/* 🎯 Dropdown */
+.user-dropdown .dropdown-menu {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.user-dropdown .dropdown-item:hover {
+  background-color: #f0f6ff;
+  color: #0056b3;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav { 
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 10px; 
+  flex-wrap: wrap; 
+} 
+
+nav a { 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+} 
+
+.badge {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.userMenuBtn{
+  margin-left: 5px;
+}
+.user-info {
+  color: white;
+  font-size: 14px;
+}
+
+.user-info a {
+  color: #ffcccc;
+  margin-left: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.user-info a:hover {
+  text-decoration: underline;
+}
+
+/* 🎨 โทนสีหลัก */
+:root {
+  --main-blue: #0056b3;
+  --light-blue: #f0f6ff;
+  --gray-light: #f8f9fa;
+  --gray-text: #555;
+}
+
+/* 🔍 แถบค้นหางาน */
+.search-bar {
+  background: var(--light-blue);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px auto;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.search-bar h2 {
+  color: var(--main-blue);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.search-bar input {
+  width: 40%;
+  padding: 10px 15px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: var(--main-blue);
+}
+
+.search-bar button {
+  background-color: var(--main-blue);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-bar button:hover {
+  background-color: #004494;
+  transform: translateY(-2px);
+}
+
+h2 {
+  color: #004aad;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ================================
+   💼 การ์ดงานใหม่ — layout แบบ JobThai
+=================================*/
+.job-listings {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.job {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: all 0.25s ease-in-out;
+}
+
+.job:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* โลโก้บริษัท */
+.job-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  background: #fafafa;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* เนื้อหางาน */
+.job-content {
+  flex: 1;
+  color: #333;
+  line-height: 1.6;
+}
+
+.job-content h5 {
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.job-content small {
+  color: #666;
+}
+
+/* ปุ่ม */
+.job-content .btn {
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.job-content .badge {
+  font-size: 0.85rem;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .job {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .job-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-outline-info {
+  color: #007bff;
+  border-color: #007bff;
+}
+.btn-outline-info:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 📌 ป้ายสถานะ */
+.badge {
+  font-size: 0.85rem;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+/* 🧭 หมวดหมู่งานยอดนิยม */
+.job-categories {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.job-categories h2 {
+  color: var(--main-blue);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.category {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--gray-text);
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.category:hover {
+  background: var(--main-blue);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.job {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.job:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.job-logo img {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 4px;
+}
+
+footer { 
+  text-align: center; 
+  padding: 20px; 
+  background-color: #222; 
+  color: white; 
+  margin-top: 40px; 
+} 
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user-info {
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%; 
+    margin: 5px 0; 
+  }
+
+  .search-bar button {
+    width: 100%;
+  }
+}
+
+/* Toast Notification */
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 14px;
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+  top: 20px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.5s, top 0.5s;
+}
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+  top: 40px;
+}
+
+#chatContent {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+#chatContent div {
+    margin-bottom: 5px;
+}
+
+#chatContent div div {
+    word-wrap: break-word;
+}
+
+.chat-header-fixed {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#customToast {
+  background-color: #dc3545; /* สีแดงเริ่มต้น */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 250px;
+  transition: opacity 0.3s ease;
+}
+.toast-success { background-color: #198754 !important; } /* สีเขียว */
+.toast-error { background-color: #dc3545 !important; } 
+
+#personalProfileModal h5 {
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+#personalProfileModal input {
+  border-radius: 8px;
+}
+
+.applicant-card {
+  border-radius: 14px;
+  transition: all 0.25s ease-in-out;
+}
+.applicant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.applicant-card img {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.btn-sm {
+  border-radius: 8px;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
+.applicant-name {
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.applicant-name:hover {
+  text-decoration: underline;
+}
+
+input[readonly] {
+  background-color: #f1f3f5 !important;
+  color: #555;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+.editable-btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  padding: 0 10px;
+}
+
+#applicantDetailModal h6 {
+  color: #0d6efd;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.status-btn {
+  min-width: 130px;
+  font-weight: 500;
+}
+
+.profile-box {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.avatar-section img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.avatar-section img:hover {
+  transform: scale(1.05);
+}
+
+#profileUsername[readonly] {
+  background-color: #f8f9fa;
+}
+
+#editPasswordBtn {
+  margin-left: 6px;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+
+/* 🎨 ปุ่มแนะนำงานอัจฉริยะ */
+.btn-ai-match {
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
+  color: #fff !important;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+}
+
+.btn-ai-match:hover {
+  background: linear-gradient(90deg, #0062cc 0%, #0099cc 100%);
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+  color: #fff !important;
+}
+
+
+/* เอฟเฟกต์แสงวิ่ง */
+.btn-ai-match::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: 0.5s;
+}
+
+.btn-ai-match:hover::after {
+  left: 100%;
+}
+
+/* ปุ่มตอน active */
+.btn-ai-match:active {
+  transform: scale(0.97);
+}
+
+
+/* 🩵 พื้นหลัง Modal */
+.modal-content {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 🔹 ส่วนหัวของ Modal */
+.tab-login {
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+  font-weight: 600;
+  cursor: pointer;
+  background: #f7f9fc;
+  color: #777;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.tab-login.active {
+  background: #ffffff;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  box-shadow: inset 0 -3px 0 #007bff;
+}
+
+/* 💬 ชื่อหัวฟอร์ม */
+.modal-body h5 {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+/* 🔸 ช่อง input */
+.modal-body .form-control {
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: 1px solid #ced4da;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+.modal-body .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* 🔹 ปุ่มเข้าสู่ระบบ */
+.modal-body .btn {
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+}
+.modal-body .btn-primary {
+  background: linear-gradient(90deg, #007bff 0%, #00b4d8 100%);
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+}
+.modal-body .btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* 🏢 ปุ่มนายจ้าง (สีเขียวอ่อน) */
+.modal-body .btn-success {
+  background: linear-gradient(90deg, #28a745 0%, #6edc81 100%);
+  border: none;
+  box-shadow: 0 3px 6px rgba(40, 167, 69, 0.3);
+}
+.modal-body .btn-success:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* 🔸 ลิงก์สมัครสมาชิก */
+.modal-body p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.modal-body p a:hover {
+  text-decoration: underline;
+}
+
+/* ✨ เอฟเฟกต์เปิด modal */
+.modal.fade .modal-dialog {
+  transform: translateY(-30px);
+  transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+/* 📱 Responsive */
+@media (max-width: 576px) {
+  .modal-content {
+    border-radius: 15px;
+  }
+  .tab-login {
+    font-size: 15px;
+  }
+}
+
+/* 🎯 Modal สมัครบริษัท */
+#registerCompanyModal .modal-content {
+  border-radius: 1rem;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 0.4s ease-in-out;
+}
+
+/* 🟢 Header สีเขียวฟ้าไล่เฉด */
+#registerCompanyModal .modal-header {
+  background: linear-gradient(90deg, #00c853, #00bfa5);
+  color: #fff;
+  border-bottom: none;
+  box-shadow: 0 2px 6px rgba(0, 150, 100, 0.4);
+}
+
+/* ✨ Input สวยๆ */
+#registerCompanyModal .form-control,
+#registerCompanyModal .form-select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  transition: all 0.25s ease;
+}
+
+#registerCompanyModal .form-control:focus,
+#registerCompanyModal .form-select:focus {
+  border-color: #00bfa5;
+  box-shadow: 0 0 5px rgba(0, 191, 165, 0.4);
+}
+
+/* ✅ ปุ่มสมัคร */
+#registerCompanyModal .btn-success {
+  background: linear-gradient(90deg, #00c853, #00bfa5);
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+#registerCompanyModal .btn-success:hover {
+  background: linear-gradient(90deg, #00bfa5, #009688);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 191, 165, 0.3);
+}
+
+/* 🌟 ปุ่ม close */
+#registerCompanyModal .btn-close-white {
+  filter: brightness(100%);
+  opacity: 0.9;
+  transition: 0.2s;
+}
+#registerCompanyModal .btn-close-white:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+/* 💬 ลิงก์สลับไปสมัครผู้ใช้ */
+#registerCompanyModal a {
+  color: #00bfa5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+#registerCompanyModal a:hover {
+  color: #009688;
+  text-decoration: underline;
+}
+
+/* 🌀 เอฟเฟกต์เปิด modal */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#logo-preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: white;
+}
+
+/* กล่อง modal */
+.modal-content {
+  animation: fadeInUp 0.4s ease;
+}
+
+/* ปุ่มสมัคร */
+.register-btn:hover {
+  background-color: #28a745 !important;
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}
+
+/* ช่อง input */
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+/* เอฟเฟกต์เปิด modal */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* 🌿 โทนสีฟ้ามิ้น */
+.input-mint {
+  background-color: #e9fcfc;
+  border: 1px solid #b3ecec;
+  transition: 0.3s;
+}
+
+.input-mint:focus {
+  background-color: #ffffff;
+  border-color: #46c2cb;
+  box-shadow: 0 0 6px rgba(70, 194, 203, 0.4);
+}
+
+/* ปุ่มสมัคร */
+.register-btn {
+  background: linear-gradient(135deg, #6ee7e7, #46c2cb);
+  color: white;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #4bd8d8, #2bb8c0);
+  transform: scale(1.02);
+}
+
+/* ปุ่มตา 👁 */
+.toggle-password {
+  background-color: #e9fcfc;
+  border: 1px solid #b3ecec;
+  border-left: none;
+  transition: 0.2s;
+}
+
+.toggle-password:hover {
+  background-color: #d4f7f7;
+}
+
+/* modal animation */
+.modal-content {
+  animation: fadeInUp 0.35s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* 🏢 โทนสมัครบริษัท (ทอง-น้ำเงินหรูหรา) */
+.input-company {
+  background-color: #eef3ff;
+  border: 1px solid #b8c9f3;
+  transition: 0.3s;
+}
+
+.input-company:focus {
+  background-color: #ffffff;
+  border-color: #2d6cdf;
+  box-shadow: 0 0 6px rgba(45, 108, 223, 0.3);
+}
+
+/* ปุ่มสมัคร */
+.company-register-btn {
+  background: linear-gradient(135deg, #2d6cdf, #f2b705);
+  border: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+.company-register-btn:hover {
+  background: linear-gradient(135deg, #1c5ad6, #e5a901);
+  transform: scale(1.03);
+}
+
+/* 👁 ปุ่มเปิด/ปิดรหัสผ่าน */
+.toggle-password {
+  background-color: #eef3ff;
+  border: 1px solid #b8c9f3;
+  border-left: none;
+  cursor: pointer;
+}
+
+.toggle-password:hover {
+  background-color: #e1e9ff;
+}
+
+/* Animation */
+.modal-content {
+  animation: fadeInUp 0.35s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔐 ฟิลด์รหัสผ่าน */
+#passwordEditFields .form-control {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  transition: 0.25s;
+}
+
+#passwordEditFields .form-control:focus {
+  border-color: #2d6cdf;
+  box-shadow: 0 0 6px rgba(45, 108, 223, 0.3);
+}
+
+/* 👁 ปุ่มเปิด/ปิดรหัสผ่าน */
+#passwordEditFields .toggle-password {
+  color: #6c757d;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+#passwordEditFields .toggle-password:hover {
+  color: #2d6cdf;
+  background-color: #eaf0ff;
+}
+
+/* ปุ่มบันทึก */
+#changePasswordBtn {
+  background: linear-gradient(135deg, #28a745, #3bd47f);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#changePasswordBtn:hover {
+  background: linear-gradient(135deg, #23943d, #31c071);
+  transform: scale(1.02);
+}
+
+/* 🔧 จัดตำแหน่ง “ตาเปิด/ปิดรหัสผ่าน” ให้ตรงกลางช่อง */
+.position-relative .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.position-relative .toggle-password:hover {
+  color: #007bff;
+  transform: translateY(-50%) scale(1.15);
+}
+
+/* 👁 ปรับ input ให้มี padding เผื่อช่องตา */
+.position-relative input.form-control {
+  padding-right: 40px !important;
+}
+
+/* 🩵 ฟิลด์รหัสผ่านแบบผู้ใช้ (โทนฟ้ามิ้น) */
+.input-mint + .toggle-password {
+  background-color: #e9fcfc;
+  border-radius: 50%;
+}
+
+.input-mint + .toggle-password:hover {
+  background-color: #d9f6f6;
+  color: #2bb8c0;
+}
+
+/* 🏢 ฟิลด์รหัสผ่านแบบบริษัท (ทอง-น้ำเงิน) */
+.input-company + .toggle-password {
+  background-color: #eef3ff;
+  border-radius: 50%;
+}
+
+.input-company + .toggle-password:hover {
+  background-color: #e1e9ff;
+  color: #2d6cdf;
+}
+
+#personalProfileModal select.form-select {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  transition: 0.2s;
+}
+#personalProfileModal select.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+select[disabled] {
+  background-color: #f8f9fa !important;
+  color: #555;
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+select + .editable-btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.jobcat-btn {
+    border: 2px solid #c7ced6;
+    padding: 8px 18px;
+    border-radius: 12px;
+    background: white;
+    font-weight: 600;
+    color: #3a3f45;
+    transition: 0.2s ease-in-out;
+}
+
+.jobcat-btn:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+    background: #eef5ff;
+    cursor: pointer;
+}
+
+.jobcat-btn.active,
+.jobcat-btn.btn-primary {
+    background: #3b82f6 !important;
+    color: white !important;
+    border-color: #3b82f6 !important;
+}
+.category-btn {
+    border: 2px solid #4A90E2;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #fff;
+    color: #4A90E2;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.category-btn:hover {
+    background: rgba(74, 144, 226, 0.15);
+    cursor: pointer;
+}
+
+.category-btn.active {
+    background: #4A90E2;
+    color: #fff;
+    box-shadow: 0px 3px 8px rgba(74, 144, 226, 0.35);
+    border-color: #4A90E2;
+}
+
+.skill-btn {
+  border-radius: 25px;
+  padding: 6px 18px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.skill-btn:hover {
+  transform: scale(1.05);
+}
+
+.applicant-search-box {
+    background: #eef5ff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.search-input {
+    width: 260px;
+    height: 45px;
+    border-radius: 8px;
+}
+
